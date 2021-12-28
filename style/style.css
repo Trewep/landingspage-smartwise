@@ -209,6 +209,10 @@ HAMBURGERMENU
         padding-right: 1.5%;
         padding-left: 1.5%;
     }
+
+    .nieuwsbrief {
+        padding-top: 5em;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -252,6 +256,10 @@ HAMBURGERMENU
     .hamburger {
         margin-left: 30em;
     }
+
+    .nieuwsbrief {
+        padding-top: 10em;
+    }
 }
 
 @media screen and (min-width: 1500px) {
@@ -264,11 +272,38 @@ HAMBURGERMENU
     .hamburger {
         margin-left: 40em;
     }
+
+    .bgimg {
+        padding-top: 9em;
+        padding-bottom: 9em;
+    }
 }
 
 @media screen and (min-width: 1900px) {
     .hamburger {
         margin-left: 45em;
+    }
+
+    .nieuwsbrief {
+        padding-top: 15em;
+    }
+
+    .bgimg {
+        padding-top: 10em;
+        padding-bottom: 10em;
+    }
+
+    .over {
+        float: left;
+        width: 30%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .mission {
+        display: block;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
@@ -276,28 +311,57 @@ HAMBURGERMENU
     .hamburger {
         margin-left: 50em;
     }
+
+    .bgimg {
+        padding-top: 11em;
+        padding-bottom: 11em;
+    }
 }
 
 @media screen and (min-width: 2300px) {
     .hamburger {
-        margin-left: 55em;
+        margin-left: 60em;
+    }
+
+    .bgimg {
+        padding-top: 12em;
+        padding-bottom: 12em;
     }
 }
 
 @media screen and (min-width: 2500px) {
     .hamburger {
-        margin-left: 55em;
+        margin-left: 70em;
+    }
+
+    .nieuwsbrief {
+        padding-top: 20em;
+    }
+
+    .bgimg {
+        padding-top: 13em;
+        padding-bottom: 13em;
     }
 }
 
 @media screen and (min-width: 2700px) {
     .hamburger {
-        margin-left: 60em;
+        margin-left: 80em;
+    }
+
+    .bgimg {
+        padding-top: 14em;
+        padding-bottom: 14em;
     }
 }
 
 @media screen and (min-width: 2900px) {
     .hamburger {
         margin-left: 65em;
+    }
+
+    .bgimg {
+        padding-top: 15em;
+        padding-bottom: 15em;
     }
 }
