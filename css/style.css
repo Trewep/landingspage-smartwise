@@ -1,0 +1,358 @@
+body {
+    padding: 0;
+    margin: 0;
+
+
+    font-family: canada-type-gibson, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+h3 {
+    font-size: 22px;
+    font-weight: normal;
+    font-style: italic;
+    color: #464646;
+    margin: 0 0 0.4rem 0;
+}
+p {
+    margin: 0 0;
+    color: #464646;
+}
+.left {
+    text-align: left;
+    justify-content: flex-start;
+}
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.ctas {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+.cta-primary {
+    display: inline-block;
+    color: white;
+    background-color: #705AFF;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 26px;
+}
+.cta-secondary {
+    display: inline-block;
+    color: white;
+    background-color: #E7A061;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 26px;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+    background-color: #705AFF;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.banner h3, .banner p {
+    color: white;
+}
+.banner article {
+    width: 100%;
+    max-width: 1268px;
+    display: flex;
+    align-items: center;
+}
+.banner .testimony {
+    width: 30%;
+}
+.banner .quote {
+    width: 70%;
+}
+
+
+.page {
+    
+}
+
+.signUp {
+    color: white;
+    background-color: #705AFF;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+
+nav {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid lightgrey;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, .2);
+    margin: auto;
+    position: fixed;
+}
+#navbar {
+    overflow: hidden;
+}
+nav section {
+    display: flex;
+    margin: auto;
+    max-width: 1268px;
+    box-sizing: border-box;
+    height: 90px;
+    align-items: center;
+}
+main section span {
+    color: #705AFF;
+}
+.nav-section {
+    width: 50%;
+    display: flex;
+}
+.nav-section a {
+    justify-content: flex-start;
+}
+.nav-section ul {
+    justify-content: flex-end;
+}
+.logo img {
+    width: 200px;
+}
+nav section div ul {
+    display: flex;
+}
+nav section div ul li {
+    list-style-type: none;
+    padding: 8px 32px;
+}
+nav section div ul li a {
+    color: #2C2C2C;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+
+/* Page content */
+.content {
+    padding: 1px;
+    padding-top: 160px
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .content {
+    padding-top: 60px;
+}
+
+main .m-content {
+    max-width: 1268px;
+    margin: auto;
+    width: 60%;
+    justify-content: flex-start;
+}
+
+main .content-t {
+    max-width: 1268px;
+    margin: auto;
+    width: 60%;
+    justify-content: flex-start;
+    background-image: url('../images/girl.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
+}
+main .content-t section {
+    width: 60%;
+}
+
+.visual {
+    width: 40%;
+}
+
+.banner-vision {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.flex {
+    display: flex;
+}
+.b-tools {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.b-image {
+    width: 35%;
+}
+.b-image img {
+    width: 100%;
+}
+.b-text {
+    width: 65%;
+    padding: 0 20px;
+}
+.tools {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.tools article {
+    width: 31%;
+}
+.tools article img {
+    width: 100%;
+}
+
+.b-mission {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.b-personas {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.personas {
+    width: 100%;
+    justify-content: space-between;
+    color: white;
+}
+.personas h4 {
+    margin: 0.3rem 0;
+    padding-top: 190px;
+    padding-left: 16px;
+}
+.personas h4 span {
+    color: rgba(255, 255, 255, 0.461);
+}
+.personas p {
+    color: white;
+    padding-left: 16px;
+}
+.personas article {
+    width: 31%;
+}
+.team h4, .team h4 span, .team p {
+    
+}
+.personas article img {
+    width: 100%;
+}
+#annelies  {
+    background-image: url('../images/annelies.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+#annelies h4,
+#annelies p,
+#annelies h4 *{
+    color: rgba(255, 255, 255, 0) !important;
+}
+#fluppe {
+    background-image: url('../images/fluppe.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+#fluppe h4,
+#fluppe p,
+#fluppe h4 *{
+    color: rgba(255, 255, 255, 0) !important;
+}
+#mats {
+    background-image: url('../images/mats.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+}
+#mats h4,
+#mats p,
+#mats h4 *{
+    color: rgba(255, 255, 255, 0) !important;
+}
+#annelies:hover {
+    background-image: url('../images/annelies_blue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    color: white;
+}
+#annelies:hover h4,
+#annelies:hover p{
+    color: white !important;
+}
+#annelies:hover h4 span{
+    color: rgba(255, 255, 255, 0.557) !important;
+}
+#fluppe:hover {
+    background-image: url('../images/fluppe_blue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    color: white;
+}
+#fluppe:hover h4,
+#fluppe:hover p{
+    color: white !important;
+}
+#fluppe:hover h4 span{
+    color: rgba(255, 255, 255, 0.557) !important;
+}
+#mats:hover {
+    background-image: url('../images/mats_blue.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    color: white;
+}
+#mats:hover h4,
+#mats:hover p{
+    color: white !important;
+}
+#mats:hover h4 span{
+    color: rgba(255, 255, 255, 0.557) !important;
+}
+
+.b-cta {
+    text-align: center;
+    margin: 80px 0;
+}
+
+
+footer {
+    background-color: #705AFF;
+    width: 100%;
+    height: 600px;
+    color: white;
+}
+footer h5 {
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0.3rem 0 0.3rem 0;
+}
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer ul li {
+    margin: 0;
+}
