@@ -329,9 +329,10 @@ main .m-content .about-h-text {
     margin: 0.3rem 0;
     padding-top: 190px;
     padding-left: 16px;
+    color: #fff;
 }
 .personas h4 span {
-    color: rgba(255, 255, 255, 0.461);
+    color: #ffa25c;
 }
 .personas p {
     color: white;
@@ -394,7 +395,7 @@ main .m-content .about-h-text {
     color: white !important;
 }
 #annelies:hover h4 span{
-    color: rgba(255, 255, 255, 0.557) !important;
+    color: #ffa25c !important;
 }
 #fluppe:hover {
     background-image: url('../images/fluppe.jpg');
@@ -408,7 +409,7 @@ main .m-content .about-h-text {
     color: white !important;
 }
 #fluppe:hover h4 span{
-    color: rgba(255, 255, 255, 0.557) !important;
+    color: #ffa25c !important;
 }
 #mats:hover {
     background-image: url('../images/mats.jpg');
@@ -422,7 +423,7 @@ main .m-content .about-h-text {
     color: white !important;
 }
 #mats:hover h4 span{
-    color: rgba(255, 255, 255, 0.557) !important;
+    color: #ffa25c !important;
 }
 
 
