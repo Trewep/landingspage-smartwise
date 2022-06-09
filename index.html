@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SmartWise</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 
     <link rel="stylesheet" href="https://use.typekit.net/wso7iqc.css">
 
@@ -21,15 +22,32 @@
                     <li><a href="#" class="">Home</a></li>
                     <li><a href="#" class="">Modules</a></li>
                     <li><a href="#" class="">Login</a></li>
-                    <li><a href="#" class="signUp">Sign Up</a></li>
+                    <li><a href="#" class="signUp">Registreer</a></li>
                 </ul>
             </div>
+        
         </section>
     </nav>
+    <nav id="navbar-mobile">
+        <div class="top">
+            <img class="topimg" width="30%" src="images/logo.svg" alt="Logo" />
+            <span class="hamburger" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="#about">Home</a>
+                <a href="#mission">Modules</a>
+                <a href="#follow">Log in</a>
+                <a href="https://commingsoon.smartwise.be">Registreer</a>
+            </div>
+        </div>
+    </nav>
+    
 
     <main class="content">
         <header>
-            <section class="content-t m-content">
+            <section class="content-t m-content h-content">
                 <section>
                     <h1>Klaar voor meer <span>creativiteit</span> en <span>probleemoplossend denken</span> in jouw opleiding?</h1>
                 </section>
@@ -46,32 +64,35 @@
             </section>
         </header>
         <div class="banner">
-            <article class="m-content">
+            <article class="m-content flex flex-sp-btwn">
                 <div class="testimony">
                     <img src="images/filip.png" alt="Filip Burgelman">
                 </div>
-                <div class="quote">
+                <div class="quote flex-e">
                     <h3>"De vraag naar creatief denken in het onderwijs is zeker en vast groot." - Filip Burgelman</h3>
                     <p>Filip geeft zelf les in IMD maar heeft veel connecties van docenten uit andere opleidingen. Filip krijgt geregeld de vraag of hij mee een creatieve workshop kan opstellen. Hoe graag hij dit zou doen kruipt daar enorm veel tijd en resources in en past dat vaak niet in zijn agenda.</p>
                 </div>
             </article>
         </div>
         <div class="banner-vision">
-            <article class="m-content flex">
+            <article class="m-content flex flex-s banner-flex">
                 <div class="b-text vision">
                     <h3>SmartWise moedigt creativiteit aan.</h3>
                     <p>De vraag naar creativiteit in het onderwijs is groot, maar het aanbod is slechts beperkt. Voor vele opleidingen is het niet evident om zomaar meer creativiteit te bieden. Het inschakelen van externen kost een school vaak ook veel geld.
                         SmartWise wil ervoor zorgen dat het aanbieden van creativiteit in een schoolkader makkelijker dan ooit wordt.</p>
                     <a class="cta-primary" href="#">Contacteer ons</a>
                 </div>
-                <div class="b-image">
+                <div style="display: none;" class="b-image">
                     <img src="images/creative.jpg" alt="Creative space image">
                 </div>
             </article>
         </div>
         <section class="b-tools">
-            <div class="m-content">
-                <h3>Tools klaar voor morgen!</h3>
+            <div id="m2-content" class="m-content">
+                <section class="tools-text">
+                    <h2>Ons aanbod</h2>
+                    <p>Tools klaar voor morgen! Deze creatieve tools en denkmethoden worden op de werkvloer vaak gehanteerd en zijn dus skills die je later zeker en vast kan gebruiken.</p>
+                </section>
                 <section class="tools">
                     <article>
                         <img src="images/designthinking_blue.jpg" alt="">
@@ -85,16 +106,18 @@
                     </article>
                     <article>
                         <img src="images/scrum_blue.jpg" alt="">
-                        <h3>Agile SCUM</h3>
-                        <p>Scrum is een methode voor project managment en aanpak. Met Scrum wordt een project opgedeeld in stukken en kan er continu gereflecteerd worden.</p>
+                        <h3>Hackathons</h3>
+                        <p>Een hackathon is een evenement waarin teams van deelnemers non-stop bezig gaan om binnen een korte tijd oplossingen voor aangereikte casussen te bedenken. Het evenement is meestal gratis voor deelnemers omdat het wordt gesponsord door de aanbieders van die casussen.</p>
                     </article>
                 </section>
-                <a class="cta-primary" href="#">Bekijk ons aanbod</a>
+                <section class="tools-cta">
+                    <a class="cta-primary" href="#">Bekijk ons aanbod</a>
+                 </section>
             </div>
         </section>
         <div class="b-mission">
-            <article class="m-content flex">
-                <div class="b-image">
+            <article class="m-content flex flex-e banner-flex">
+                <div style="display: none;" class="b-image">
                     <img src="images/teaching.jpg" alt="Teaching">
                 </div>
                 <div class="mission b-text">
@@ -105,47 +128,51 @@
             </article>
         </div>
         <section class="b-personas">
-            <div class="m-content">
-                <h3>Achter SmartWise</h3>
+            <div id="m2-content" class="m-content">
+                <div class="personas-text">
+                    <h2>Ons team</h2>
+                    <p>Smartwise bestaat uit een multidiciplinair team van drie derdejaars IMD studenten, elk met hun eigen kwaliteiten. Als we dan toch één ding gelijk hebben, is het de goesting die we achter Smartwise steken.</p>
+                </div>
                 <div class="personas flex">
                     <article class="team" id="annelies">
                         <h4>Annelies <span>Deroy</span></h4>
-                        <p>Designer</p>
+                        <p>Designer & Analyst</p>
                     </article>
                     <article class="team" id="fluppe">
                         <h4>Fluppe <span>Van Meerbeeck</span></h4>
-                        <p>Developer</p>
+                        <p>Wordpress Developer</p>
                     </article>
                     <article class="team" id="mats">
                         <h4>Mats <span>Thys</span></h4>
-                        <p>Scrum Master & Visual Designer</p>
+                        <p>Scrum Master, UX/UI & Visual Designer</p>
                     </article>
                 </div>
             </div>
         </section>
         <div class="b-cta">
             <div class="contact-cta m-content">
-                <h3>Bij vragen, wij staan altijd open voor een gesprek.</h3>
+                <h3>Heb je nog vragen? Wij staan altijd open voor een gesprek.</h3>
                 <p>Heb je concrete vragen over iets? Wil je meer duidelijkheid of gewoon een gesprek? Daar staan wij steeds voor open!</p>
                 <a class="cta-primary" href="#">Contacteer ons</a>
             </div>
         </div>
     </main>
     <footer>
-        <img src="images/footer.png" width="100%" alt="">
-        <div style="display: none;">
-            <div class="f-left">
+        <div class="m-content container">
+            <div class="f-section f-left">
                 <div>
-                    <a href="images/logo.svg"></a>
+                    <img class="footer-logo" src="images/logo_white.svg" alt="Smartwise Logo">
                     <h5>Encourage creativity</h5>
                 </div>
+                <br>
                 <div>
                     <h5>SmartWise BELGIUM</h5>
                     <ul>
-                        <li>by Inteactive Multimedia Design</li>
+                        <li>by Interactive Multimedia Design</li>
                         <li>at Thomas More Mechelen</li>
                     </ul>
                 </div>
+                <br>
                 <div>
                     <h5>Services</h5>
                     <ul>
@@ -156,10 +183,45 @@
                     </ul>
                 </div>
             </div>
-            <div class="f-right">
-
+            <div class="f-section f-right">
+                <div>
+                    <h5>Contact</h5>
+                    <ul>
+                        <li>hello@smartwise.be</li>
+                        <li>+32 491 22 43 29</li>
+                    </ul>
+                </div>
+                <br>
+                <div>
+                    <h5>Andere</h5>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Support</li>
+                    </ul>
+                </div>
+                <br>
+                <h5>Partners</h5>
+                <div class="logos">
+                    <div>
+                        <img src="images/imd.png" alt="Logo IMD">
+                    </div>
+                    <div>
+                        <img src="images/thomasmore.png" alt="Logo Thomas More">
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
 </body>
+
+<script>
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
 </html>

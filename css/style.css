@@ -61,7 +61,7 @@ p {
 
 .banner {
     width: 100%;
-    height: 400px;
+    height: 480px;
     background-color: #705AFF;
     margin: auto;
     display: flex;
@@ -93,7 +93,7 @@ p {
     background-color: #705AFF;
     padding: 8px 16px;
     box-sizing: border-box;
-    border-radius: 6px;
+    border-radius: 20px;
 }
 
 
@@ -104,12 +104,17 @@ nav {
     box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, .2);
     margin: auto;
     position: fixed;
+    z-index: 999;
 }
 #navbar {
     overflow: hidden;
 }
+#navbar-mobile {
+    display: none;
+}
 nav section {
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     max-width: 1268px;
     box-sizing: border-box;
@@ -150,7 +155,7 @@ nav section div ul li a {
 /* Page content */
 .content {
     padding: 1px;
-    padding-top: 160px
+    padding-top: 0;
 }
 .sticky {
     position: fixed;
@@ -161,34 +166,86 @@ nav section div ul li a {
     padding-top: 60px;
 }
 
+#m2-content {
+    max-width: 1600px;
+    width: 80%;
+}
+
 main .m-content {
     max-width: 1268px;
     margin: auto;
+    padding: 80px 0;
     width: 60%;
+}
+.flex-s {
     justify-content: flex-start;
 }
-
+.flex-e {
+    justify-content: flex-end;
+}
+.flex-sp-btwn {
+    justify-content: space-between !important;
+}
+main header {
+    padding-top: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #f6f5ff;
+    background-image: url('../images/header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}
+main .h-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 main .content-t {
     max-width: 1268px;
     margin: auto;
     width: 60%;
     justify-content: flex-start;
-    background-image: url('../images/girl.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 100%;
+
 }
 main .content-t section {
     width: 60%;
 }
+
+main .about-m-content {
+    width: 100%;
+    display: flex;
+    background-color: red;
+}
+main .m-content .about-h-image {
+    background-image: url('../images/brainstorming.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    width: 50%;
+    height: 400px;
+}
+main .m-content .about-h-text {
+    width: 60%;
+    height: 360px;
+
+    background-color: green;
+}
+
 
 .visual {
     width: 40%;
 }
 
 .banner-vision {
-    margin-top: 40px;
+    background-color: #f6f5ff;
+    margin-top: 0px;
     margin-bottom: 40px;
+    /*width: 100%;*/
+    background-image: url('../images/encourage.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100% 0;
 }
 .flex {
     display: flex;
@@ -205,7 +262,20 @@ main .content-t section {
 }
 .b-text {
     width: 65%;
-    padding: 0 20px;
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px 1px rgba(0, 0, 0, .2);
+}
+.tools-text {
+    text-align: center;
+}
+.tools-text h2 {
+    margin: 0;
+    color: #2C2C2C
+}
+.tools-text p {
+    margin: 0.5rem auto 3rem auto;
+    width: 75%;
 }
 .tools {
     display: flex;
@@ -218,12 +288,31 @@ main .content-t section {
 .tools article img {
     width: 100%;
 }
+.tools-cta {
+    text-align: center;
+}
 
 .b-mission {
     margin-top: 40px;
     margin-bottom: 40px;
+    background-color: #f6f5ff;
+    background-image: url('../images/teaching.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    
 }
 
+.personas-text {
+    text-align: center;
+}
+.personas-text h2 {
+    margin: 0;
+    color: #2C2C2C;
+}
+.personas-text p {
+    margin: 0.5rem auto 3rem auto;
+    width: 75%;
+}
 
 .b-personas {
     margin-top: 80px;
@@ -233,6 +322,8 @@ main .content-t section {
     width: 100%;
     justify-content: space-between;
     color: white;
+    display: flex;
+    flex-wrap: wrap;
 }
 .personas h4 {
     margin: 0.3rem 0;
@@ -245,9 +336,10 @@ main .content-t section {
 .personas p {
     color: white;
     padding-left: 16px;
+    padding-bottom: 16px;
 }
 .personas article {
-    width: 31%;
+    width: 33.3334%;
 }
 .team h4, .team h4 span, .team p {
     
@@ -256,10 +348,11 @@ main .content-t section {
     width: 100%;
 }
 #annelies  {
-    background-image: url('../images/annelies.jpg');
+    background-image: url('../images/annelies_blue.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 250px;
+    background-position: 50%;
+    height: 100%;
 }
 #annelies h4,
 #annelies p,
@@ -267,10 +360,11 @@ main .content-t section {
     color: rgba(255, 255, 255, 0) !important;
 }
 #fluppe {
-    background-image: url('../images/fluppe.jpg');
+    background-image: url('../images/fluppe_blue.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 250px;
+    background-position: 50%;
+
 }
 #fluppe h4,
 #fluppe p,
@@ -278,10 +372,10 @@ main .content-t section {
     color: rgba(255, 255, 255, 0) !important;
 }
 #mats {
-    background-image: url('../images/mats.jpg');
+    background-image: url('../images/mats_blue.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 250px;
+    background-position: 50%;
 }
 #mats h4,
 #mats p,
@@ -289,10 +383,10 @@ main .content-t section {
     color: rgba(255, 255, 255, 0) !important;
 }
 #annelies:hover {
-    background-image: url('../images/annelies_blue.jpg');
+    background-image: url('../images/annelies.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 250px;
+    background-position: 50%;
     color: white;
 }
 #annelies:hover h4,
@@ -303,10 +397,10 @@ main .content-t section {
     color: rgba(255, 255, 255, 0.557) !important;
 }
 #fluppe:hover {
-    background-image: url('../images/fluppe_blue.jpg');
+    background-image: url('../images/fluppe.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 250px;
+    background-position: 50%;
     color: white;
 }
 #fluppe:hover h4,
@@ -317,10 +411,10 @@ main .content-t section {
     color: rgba(255, 255, 255, 0.557) !important;
 }
 #mats:hover {
-    background-image: url('../images/mats_blue.jpg');
+    background-image: url('../images/mats.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 250px;
+    background-position: 50%;
     color: white;
 }
 #mats:hover h4,
@@ -331,17 +425,49 @@ main .content-t section {
     color: rgba(255, 255, 255, 0.557) !important;
 }
 
+
+
+
+
 .b-cta {
     text-align: center;
-    margin: 80px 0;
+    margin: 80px 0 0 0;
+    background-color: #f6f5ff;
 }
 
 
 footer {
     background-color: #705AFF;
     width: 100%;
-    height: 600px;
+    height: 100%;
     color: white;
+}
+footer .m-content {
+    max-width: 1268px;
+    margin: auto;
+    width: 60%;
+    justify-content: flex-start;
+}
+footer .container {
+    display: flex;
+}
+footer .logos {
+    width: 100%;
+    display: flex;
+}
+footer .logos div {
+    width: 50%;
+}
+footer .container .f-section {
+    width: 50%;
+    padding-top: 60px;
+    padding-bottom: 32px;
+}
+footer .container .f-left .footer-logo {
+    width: 60%;
+}
+footer .container .f-right img {
+    width: 90%;
 }
 footer h5 {
     font-weight: 400;
@@ -355,4 +481,255 @@ footer ul {
 }
 footer ul li {
     margin: 0;
+}
+
+
+
+
+
+
+
+/******
+HAMBURGERMENU
+******/
+
+.hamburger {
+    top: 2em;
+    margin-left: 2em;
+    right: 2em;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: rgb(112, 90, 225);
+    background-color: rgba(112, 90, 225, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #FFA25C;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    color: #FF5C5C;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+  
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+
+
+
+
+/* ---- RESPONSIVE ---- */
+
+@media (max-width: 1245px) {
+    body {
+        
+    }
+
+    .left {
+        text-align: left;
+        justify-content: flex-start;
+    }
+    .center {
+        text-align: center;
+    }
+    .right {
+        text-align: right;
+        justify-content: flex-end;
+    }
+
+    nav section div ul li {
+        list-style-type: none;
+        padding: 8px 16px;
+    }
+
+    nav section {
+    }
+
+    .nav-section {
+        width: 50%;
+        display: flex;
+    }
+
+
+    main .m-content {
+        max-width: 1268px;
+        margin: auto;
+        width: 80%;
+        justify-content: flex-start;
+    }
+    header {
+        height: 60vh;
+    }
+    .banner .quote {
+        width: 60%;
+    }
+
+    .tools {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .tools article {
+        width: 47%;
+        padding-bottom: 20px;
+    }
+
+
+    .personas article {
+        width: 50%;
+    }
+
+
+    .flex-s {
+        justify-content: flex-start !important;
+    }
+    .flex-e {
+        justify-content: flex-end !important;
+    }
+}
+
+
+
+
+/* ---- RESPONSIVE ---- */
+
+@media (max-width: 800px) {
+
+    h1 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    h3 {
+        font-size: 18px;
+        font-weight: normal;
+        font-style: italic;
+        color: #464646;
+        margin: 0 0 0.4rem 0;
+    }
+    .tools article {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    #navbar {
+        display: none;
+    }
+    #navbar-mobile {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #navbar-mobile .top {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #navbar-mobile .top span {
+        padding-right: 20px;
+    }
+    
+    .personas article {
+        width: 100%;
+    }
+}
+
+@media (max-width: 680px) {
+    main header {
+        height: 85vh;
+        min-height: 600px;
+    }
+    main .content-t section {
+        width: 80% !important;
+        text-align: center;
+        margin: auto;
+    }
+    #m2-content {
+        max-width: 1600px;
+        width: 90%;
+    }
+    
+    main .m-content {
+        max-width: 1268px;
+        margin: auto;
+        padding: 80px 0;
+        width: 90%;
+    }
+    .banner {
+        width: 100%;
+        height: 100%;
+        background-color: #705AFF;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    .banner h3, .banner p {
+        color: white;
+    }
+    .banner article {
+        width: 100%;
+        max-width: 1268px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .banner .testimony {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+    }
+    .banner .quote {
+        width: 60%;
+        margin: auto;
+    }
+    footer .m-content {
+        width: 80%;
+    }
+    .banner-flex {
+        justify-content: center !important;
+    }
+    .f-section {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 }
